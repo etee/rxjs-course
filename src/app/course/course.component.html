@@ -16,7 +16,7 @@
 
 
     <table class="lessons-table mat-elevation-z7" *ngIf="(lessons$ | async) as lessons">
-
+        {{searchLessons$ | async | json}}
         <thead>
             <th>#</th>
             <th>Description</th>
